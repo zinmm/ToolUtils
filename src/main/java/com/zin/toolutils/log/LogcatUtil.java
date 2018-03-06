@@ -3,7 +3,7 @@ package com.zin.toolutils.log;
 import com.zin.toolutils.BuildConfig;
 
 /**
- * Created by zhujinming on 2017/5/27.
+ * Created by ZhuJinMing on 2017/5/27.
  */
 public class LogcatUtil {
 

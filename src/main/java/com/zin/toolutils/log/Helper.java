@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 /**
  * Helper util class to be used instead of Android methods to avoid direct dependency and enable
  * unit testing on Android projects.
- * Created by zhujinming on 2017/5/27.
+ * Created by ZhuJinMing on 2017/5/27.
  */
 final class Helper {
 

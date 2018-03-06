@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.widget.Toast;
 
 /**
- * Created by zhujinming on 2017/6/30.
+ * Created by ZhuJinMing on 2017/6/30.
  */
 
 public class ApplicationInstallActionUtil extends BroadcastReceiver {

@@ -3,7 +3,7 @@ package com.zin.toolutils.log;
 import android.util.Log;
 
 /**
- * Created by zhujinming on 2017/5/27.
+ * Created by ZhuJinMing on 2017/5/27.
  */
 class AndroidLogAdapter implements LogAdapter {
     @Override public void d(String tag, String message) {
