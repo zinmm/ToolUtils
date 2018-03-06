@@ -17,7 +17,6 @@
 package com.zin.toolutils.density;
 
 import android.content.Context;
-import android.content.res.Configuration;
 import android.graphics.Point;
 import android.util.DisplayMetrics;
 
@@ -117,7 +116,4 @@ public class DensityUtils {
         return (H / W);
     }
 
-    public static boolean isScreenOriatationPortrait(Context context) {
-        return context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
-    }
 }

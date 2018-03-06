@@ -5,7 +5,7 @@ import android.content.Context;
 import com.zin.toolutils.log.LogcatUtil;
 
 /**
- * Created by zhujinming on 2017/5/27.
+ * Created by ZhuJinMing on 2017/5/27.
  */
 
 public class LogOrToastUtil {

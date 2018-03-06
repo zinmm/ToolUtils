@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by zhujinming on 2017/6/29.
+ * Created by ZhuJinMing on 2017/6/29.
  */
 
 public class ApplicationListUtil {

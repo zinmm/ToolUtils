@@ -17,7 +17,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 /**
- * Created by zhujinming on 2017/5/27.
+ * Created by ZhuJinMing on 2017/5/27.
  */
 final class LoggerPrinter implements Printer {
 
