@@ -259,29 +259,29 @@ public class ImageUtils {
     /**
      * 获取资源图片
      *
-     * @param mContext
+     * @param context
      * @param resId
      * @return bitmap
      */
-    public static Bitmap getResourceBitmap(Context mContext, int resId) {
+    public static Bitmap getResourceBitmap(Context context, int resId) {
         BitmapFactory.Options opt = new BitmapFactory.Options();
         opt.inPreferredConfig = Bitmap.Config.RGB_565;
         opt.inPurgeable = true;
         opt.inInputShareable = true;
         // 获取资源图片
-        InputStream is = mContext.getResources().openRawResource(resId);
+        InputStream is = context.getResources().openRawResource(resId);
         return BitmapFactory.decodeStream(is, null, opt);
     }
 
     /**
      * 获取资源图片
      *
-     * @param mContext
+     * @param context
      * @param resId
      * @return drawable
      */
-    public static Drawable getResourceDrawable(Context mContext, int resId) {
-        return mContext.getResources().getDrawable(resId);
+    public static Drawable getResourceDrawable(Context context, int resId) {
+        return context.getResources().getDrawable(resId);
     }
 
 

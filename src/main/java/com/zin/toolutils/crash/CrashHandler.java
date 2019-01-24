@@ -12,7 +12,7 @@ import java.lang.Thread.UncaughtExceptionHandler;
  */
 public class CrashHandler implements UncaughtExceptionHandler {
 
-    private Context mContext;
+    private Context context;
 
     private String errorMsg = "累了，休息一下";
 
@@ -31,7 +31,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
      * @param ctx
      */
     public void init(Context ctx) {
-        mContext = ctx;
+        context = ctx;
         if (mDefaultHandler != null) {
             mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
             Thread.setDefaultUncaughtExceptionHandler(this);
@@ -77,14 +77,14 @@ public class CrashHandler implements UncaughtExceptionHandler {
         }
         // final String msg =ex.getCause().getMessage();
         // 使用Toast来显示异常信息
-        if (mContext == null) {
+        if (context == null) {
             return true;
         }
         new Thread() {
             @Override
             public void run() {
                 Looper.prepare();
-                ToastUtils.showToast(mContext, getErrorMsg());
+                ToastUtils.showToast(context, getErrorMsg());
                 Looper.loop();
             }
 
